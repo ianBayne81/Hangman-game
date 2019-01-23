@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:white;
+}
+
+#flex-box { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+#app {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    border: double 5px red;
+    border-radius: 5px;
+    background-image: url("./images/brickwall.jpg");
+    background-size: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Monoton', cursive;
+}
+
+canvas {
+    opacity: .9;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    position: relative;
+    opacity: .9;
+    background: black;
+}
+
+#container2 {
+    background-color: black;
+    opacity: .9;
+}
+
+#puzzle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: yellow;
+}
+
+span {
+    border-bottom: 1px solid #bd9c08;
+    display: inline-block;
+    font-size: 20px;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 .1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+#guesses {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: yellow;
+}
+
+#guessedLetters {
+    position: relative;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+button {
+    min-width: 170px;
+    min-height: 50px;
+    font-size: 20px;
+    font-family: 'Monoton', cursive;
+    opacity: .9;
+}
+
+#reset {
+    text-align: center;
+    border-color: black;
+    border-radius: 15px;
+    background: radial-gradient(red, black);
+    color: rgb(227, 243, 6);
+    height: 40px;
+    width: 35%;
+}
+
+#reset:hover {
+    
+    transition: background .3s ease, color .3s ease;
+    background: radial-gradient(red,rgb(43, 40, 40));
+    color: white;
+    cursor: pointer;
+}
+
+
+/* for desktop display */
+@media screen and (min-width: 1024px) {
+    
+}
+
+/*for tablet display */
+@media screen and (min-width:471px) and (max-width: 1023px) {
+    
+}
+
+/* for phone display */
+@media screen and (min-width: 0px) and (max-width: 470px) {
+    #app {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #flex-box { 
+        margin: 0;
+        padding: 0;
+    }
+
+    
+}
