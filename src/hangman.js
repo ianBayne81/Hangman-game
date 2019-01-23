@@ -12,7 +12,7 @@ class Hangman {
     calculateStatus() {
         const finished = this.word.every((letter) => this.guessedLetters.includes(letter) || letter === ' ')
         if (this.remainingGuesses === 0) {
-            this.status = `GAME OVER, nice try! The word was ${this.word.join('').toUpperCase()}`
+            this.status = `GAME OVER! The word was ${this.word.join('').toUpperCase()}`
         } else if (finished) {
             this.status = "Great work, you guessed the word!"
         } else {
