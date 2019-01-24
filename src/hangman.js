@@ -1,4 +1,4 @@
-import  { backDrop, headPhase, leftLegPhase, rightLegPhase, leftArmPhase, rightArmPhase, ropePhase, dropPhase, detatchPhase} from './canvas.js'
+import  { backDrop, headPhase, bodyPhase, leftLegPhase, rightLegPhase, leftArmPhase, rightArmPhase, ropePhase, dropPhase, detatchPhase} from './canvas.js'
 
 class Hangman {
     constructor(word, remainingGuesses) {

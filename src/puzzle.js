@@ -7,9 +7,13 @@ const wordMix = ['baseball', 'science', 'flower', 'castle', 'knight', 'crocodile
         'dessert', 'respected', 'induction', 'industry', 'mountain', 'elephant', 'wonderful', 'racing', 'competition', 
         'island', 'graduation', 'achievement', 'shopping', 'beach']
 
-const getPuzzle = () => {
-    let puzzle = wordMix[Math.floor(Math.random() * wordMix.length)]
+
+const getPuzzle = async () => {
+    let wordPuzzle = await wordMix[Math.floor(Math.random() * wordMix.length)]
+    
+    let puzzle = await wordPuzzle
     return puzzle
+
 }
 
 export { getPuzzle }

@@ -269,7 +269,7 @@ const detatchPhase = function () {
     context.save()
 }
 
-export { backDrop, headPhase, leftLegPhase, rightLegPhase, leftArmPhase, rightArmPhase, ropePhase, dropPhase, detatchPhase }
+export { backDrop, headPhase, bodyPhase, leftLegPhase, rightLegPhase, leftArmPhase, rightArmPhase, ropePhase, dropPhase, detatchPhase }
 
     
    

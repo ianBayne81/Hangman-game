@@ -187,8 +187,8 @@ const render = () => {
     })
 }
     
-const startGame = () => {
-    const puzzle = getPuzzle()
+const startGame = async () => {
+    const puzzle = await getPuzzle()
     game1 = new Hangman(puzzle, 7)
     backDrop()
     render()
